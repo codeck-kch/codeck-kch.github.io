@@ -1,8 +1,8 @@
 # Site settings
 title:       codeck
 email:       codeck.kch@gmail.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+author:      Cheng Kuan
+description: "Writing to Learn"
 baseurl:     ""
 url:         "http://codeck.org"
 
