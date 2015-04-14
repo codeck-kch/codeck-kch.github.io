@@ -1,18 +1,24 @@
 ---
 layout: default
-title: 我的Blog
 ---
 
-    　　<h2>{{ page.title }}</h2>
+<div class="home">
 
-    　　<p>最新文章</p>
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+        <p class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
 
-    　　<ul>
-
-    　　　　{% for post in site.posts %}
-
-    　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
-
-    　　　　{% endfor %}
-
-    　　</ul>
+  {% include pagination.html %}
+</div>
