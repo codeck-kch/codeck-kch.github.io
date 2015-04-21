@@ -1,0 +1,13 @@
+{% if page.custom_js contains 'mathjax' %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+{% endif %}
+{% if page.custom_js contains 'mathjaxcn' %}
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+{% endif %}
+{% if page.custom_js contains 'd3' %}
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+{% endif %}
+{% if page.custom_js contains 'd3cn' %}
+<script src="http://cdn.bootcss.com/d3/3.5.5/d3.min.js"></script>
+{% endif %}
+
