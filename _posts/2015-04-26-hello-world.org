@@ -1,0 +1,31 @@
+#+TITLE: 你好，世界
+#+LAYOUT: default
+#+PUBLISHED: true
+#+CUSTOM_JS: [mathjaxcn, d3cn]
+
+
+用org写着看看
+
+试试公式能不能用
+#+HTML: $$a^2 + b^2 = c^2$$
+
+再试试d3能不能用
+
+#+BEGIN_HTML
+<div id="viz">
+<script>
+var sampleSVG = d3.select("div#viz")
+.append("svg")
+.attr("width", 100)
+.attr("height", 100);
+
+sampleSVG.append("circle")
+.style("stroke", "gray")
+.style("fill", "white")
+.attr("r", 40)
+.attr("cx", 50)
+.attr("cy", 50)
+.on("mouseover", function(){d3.select(this).style("fill", "aliceblue");})
+.on("mouseout", function(){d3.select(this).style("fill", "white");});
+</script>
+#+END_HTML
