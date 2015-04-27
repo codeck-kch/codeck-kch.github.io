@@ -44,8 +44,15 @@ share_stumbleupon: false
 
 # Build settings
 markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+kramdown:
+  auto_ids: true
+  input: GFM
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+# markdown:     redcarpet
+# redcarpet:
+#   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
 paginate:     3
 sass:
