@@ -2,7 +2,7 @@
 title:       codeck
 email:       codeck.kch@gmail.com
 author:      Cheng Kuan
-description: "Writing to Learn"
+description: "Writing to Forget"
 baseurl:     ""
 url:         "http://codeck.org"
 
@@ -20,7 +20,7 @@ disqus_shortname:
 
 # Social icons
 show_social_icons: false
-github_username:
+github_username: codeck
 stackoverflow_id:
 twitter_username:
 google_plus_id:
