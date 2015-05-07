@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 恒星共识协议-2
-summary: 恒星共识协议白皮书 (https://www.stellar.org/papers/stellar-consensus-protocol.pdf)中文翻译，包含第二章。
+summary: 恒星共识协议白皮书 (https://www.stellar.org/papers/stellar-consensus-protocol.pdf)中文翻译，包含第二节。
 custom_js:
 - mathjaxcn
 - d3cn
