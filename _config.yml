@@ -1,6 +1,6 @@
 # Site settings
 title:       codeck
-email:       codeck.kch@gmail.com
+email:       ck@codeck.org
 author:      Cheng Kuan
 description: "Writing to Forget"
 baseurl:     ""
@@ -19,10 +19,11 @@ show_post_footers:  false
 disqus_shortname:
 
 # Social icons
-show_social_icons: false
+show_social_icons: true
 github_username: codeck
 stackoverflow_id:
 twitter_username:
+weibo_username: codeck
 google_plus_id:
 linkedin_username:
 bitcoin_url:
