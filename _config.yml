@@ -6,6 +6,7 @@ description: "Writing to Forget"
 baseurl:     ""
 url:         "http://codeck.org"
 
+gems: [jekyll-paginate]
 # Google analytics
 google_analytics:
 
@@ -50,7 +51,6 @@ kramdown:
   input: GFM
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
 # markdown:     redcarpet
 # redcarpet:
 #   extensions: ['smart', 'tables', 'with_toc_data']
