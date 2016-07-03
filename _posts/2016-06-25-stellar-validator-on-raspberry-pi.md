@@ -9,9 +9,9 @@ date: 2016-06-25 15:56:01 +0800
 
 #### 64bit！64bit？
 
-之前有运行stellar-core的[经验](https://github.com/strllar/poor_dockers/)，知道它[需要64位的time_t](https://github.com/stellar/stellar-core/blob/v0.5.0/src/util/Timer.h#L63-L64)。所以在树莓派3发布时很期待，因为第一次集成了64位处理器。但进一步调研发现官方系统仍然是32位，[社区在尝试64位模式](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=137963)，其中有日本网友制作了[64位docker环境](http://atbsd.com/?p=39)，看上去和移植stellar-core需要的基础已经非常接近。但考虑到这个方式64位host系统还不稳定，而且arm64的docker镜像也没有经过足够测试，不知道还有多少坑，所以一直没有下决定订购。同样因为对社区成熟度的担心，原生64位支持的[PINE64](http://www.pine64.com)也仅是关注。
+之前有运行stellar-core的[经验](https://github.com/strllar/poor_dockers/)，知道它[需要64位的time_t](https://github.com/stellar/stellar-core/blob/v0.5.0/src/util/Timer.h#L63-L64)。所以在树莓派3发布时很期待，因为第一次集成了64位处理器。但进一步调研发现官方系统仍然是32位，[社区在尝试64位模式](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=137963)，其中有日本网友制作了[64位docker环境](http://atbsd.com/?p=39)，看上去和移植stellar-core需要的基础已经非常接近。但考虑到这个方式64位host系统还不稳定，而且arm64的docker镜像也没有经过足够测试，不知道还有多少坑，所以一直没有下决定订购。同样因为对社区成熟度的担心，原生64位支持的[PINE64](http://www.pine64.com)也仅是关注没有实操。
 
-#### Rasberry Pi Model B (2014)
+#### Rasberry Pi Model B (2013)
 
 直到上星期，从回收来的显卡挖矿机零件中里找出一个树莓派，还是2013年底全民挖矿时的配置，当时用做矿机的看门狗，负责死机后充启。综合外观和年份，确定应该是[第一代Model B](https://www.raspberrypi.org/products/model-b/)，配置有ARMv6 (32-bit)的BCM2835处理器和512M内存，存储为4G SD卡。
 
