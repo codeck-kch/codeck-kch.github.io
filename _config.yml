@@ -67,8 +67,8 @@ share_hackernews: false
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer: '往前'
+    older: '往后'
   share_buttons:
     text:         'Share this post!'
     facebook:     'Share on Facebook'
@@ -81,8 +81,8 @@ text:
     stumbleupon:  'Share on StumbleUpon'
     hackernews:   'Share on Hacker News'
   post:
-    updated:        'Updated'
-    minute_read:    'minute read'
+    updated:        '更新于'
+    minute_read:    '分钟可读完'
     related_posts:  'Related Posts'
   index:
     coming_soon: 'Coming soon...'
@@ -96,7 +96,7 @@ text:
       sent:     'Message sent!'
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
+  og_locale: 'zh_CN'
 
 # Build settings
 markdown:     kramdown
