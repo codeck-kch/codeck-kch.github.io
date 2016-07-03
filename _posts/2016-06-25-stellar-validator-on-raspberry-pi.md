@@ -30,7 +30,7 @@ pkg_add pkgin
 pkgin install git libtool-base pkg-config automake gmake bison flex pandoc clang
 ```
 
-但clang仍然使用系统自带的libstdc++ 4.8版本，不符合stellar-core的要求。于是决定构建libc++库以支持stellar－core需要的c++11特性。3.7版本libc++需要cmake 3.5版本，而evbarm编译好的二进制包中只有3.4版本。这些依赖软件如果直接在树莓派上编译将耗费大量的时间，所以首先按照 https://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/doc/HOWTO-use-crosscompile 中的指导，本地安装一个NetBSD7的系统，并配置交叉编译环境(非root方式)。
+但clang仍然使用系统自带的libstdc++ 4.8版本，不符合stellar-core的要求。于是决定构建libc++库以支持stellar－core需要的c++11特性。3.7版本libc++需要cmake 3.5版本，而给evbarm编译好的二进制包中只有3.4版本。这些依赖软件如果直接在树莓派上编译将耗费大量的时间，所以首先按照 <https://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/doc/HOWTO-use-crosscompile> 中的指导，本地安装一个NetBSD7的系统，并配置交叉编译环境(非root方式)。
 
 ```sh
 # @netbsd/x64
@@ -145,21 +145,23 @@ ktruss -t s -p <stellar-core-pid>
 ```
 
 发现是`SIGPIPE`导致的退出，进一步排查发现
-https://github.com/stellar/stellar-core/pull/1043/files#diff-4b4eb6693b4956a1cc728c7e7dc69eb9
+[4b4eb669](http://github.com/stellar/stellar-core/pull/1043/files#diff-4b4eb6693b4956a1cc728c7e7dc69eb9)
 中所需要的修改，修改后stellar-core不再异常退出。
 
 #### Pull Requests
 
 代码在NetBSD环境下需要的一些改动，已经提交：
 
-- https://github.com/stellar/medida/pull/6
-- https://github.com/xdrpp/xdrpp/pull/8
-- https://github.com/stellar/stellar-core/pull/1043
+- <https://github.com/stellar/medida/pull/6>
+- <https://github.com/xdrpp/xdrpp/pull/8>
+- <https://github.com/stellar/stellar-core/pull/1043>
 
 #### Last but Most Important
 
 最重要的是广告时间：
+
 ```
 "GDPJ4DPPFEIP2YTSQNOKT7NMLPKU2FFVOEIJMG36RCMBWBUR4GTXLL57 nezha"
 ```
+
 敬请各路英雄将本节点加入`QUORUM_SET`，小[哪吒](https://en.wikipedia.org/wiki/Nezha_(deity))是正直的！
