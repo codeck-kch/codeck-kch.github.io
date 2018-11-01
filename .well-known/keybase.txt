@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/codeck
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://codeck.org
+  * I am codeck (https://keybase.io/codeck) on keybase.
+  * I have a public key ASDyhlx-SXtnYi3px3miYqeOkqvB3k1VVEqUeV-TAaxh7wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f2865c7e497b67622de9c779a262a78e92abc1de4d55544a94795f9301ac61ef0a",
+      "host": "keybase.io",
+      "kid": "0120f2865c7e497b67622de9c779a262a78e92abc1de4d55544a94795f9301ac61ef0a",
+      "uid": "799446bf3e73b670410d4cf615834619",
+      "username": "codeck"
+    },
+    "merkle_root": {
+      "ctime": 1541076098,
+      "hash": "b126b55dc315e22534338a88082c4c3b7e752a4c7263277469b7fd0c48edd80e81b7fc921ddea6a0d302ab1f92df2fec2c3f17e892f425de83d3f69a54c4b103",
+      "hash_meta": "8f5204a6827d76a97953bfaa50aaf8b3f662b7834d2fe853c39f17c0237cf475",
+      "seqno": 3881450
+    },
+    "service": {
+      "entropy": "OyE1fNrAeek2oN5adizEyuT8",
+      "hostname": "codeck.org",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.9.0"
+  },
+  "ctime": 1541076141,
+  "expire_in": 504576000,
+  "prev": "82ad32678c3e88efd4b09ff5ae0b3389a13106bada9bfdcc84d683349f52d20c",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8oZcfkl7Z2It6cd5omKnjpKrwd5NVVRKlHlfkwGsYe8Kp3BheWxvYWTESpcCBMQggq0yZ4w+iO/UsJ/1rgsziaExBrram/3MhNaDNJ9S0gzEIGl6fH6bM6KKGJE1uZrCMCuEliXGSVr4SM4xhn4k5qEkAgHCo3NpZ8RA8iMeLh/TCh7yicwI/aLHBTAUAJeYflcUzTbU+oMmDpK88LIq9+dOof3vZzloxVnIyaJvCvcDpavPklOka3YhCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDBqfCRbQtC/DaclRQ3aIorvI2FI5xqP9t5NR18MJaWMo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/codeck
+
+==================================================================
+
